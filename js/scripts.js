@@ -21,6 +21,12 @@ $(document).ready(function() {
     } else if (q1 === "ind" && q2 === "back") {
       $("#javaphp").show();
     };
+
+    if (q5 === "big") {
+      $("#minotaur").show();
+    } else if (q5 === "small") {
+      $("#lemur").show();
+    };
     alert("Test");
 
     event.preventDefault();
