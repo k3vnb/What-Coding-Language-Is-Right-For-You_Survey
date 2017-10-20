@@ -11,19 +11,15 @@ $(document).ready(function() {
     } else if (q3 === "hate") {
       $("#other").show();
     } else if (q1 === "corp" && q2 === "back") {
-      alert("PHP/Drupal or C#/.Net");
+      $("#phpnet").show();
+    }  else if (q1 === "corp" && q2 === "front") {
+      $("#design").show();
     } else if (q1 !== "corp" && q2 === "front" || q1 !== "corp" && q2 === "back") {
-      alert("Ruby/Rails or React");
+      $("#rubyreact").show();
     } else if (q1 === "ind" && q2 === "front") {
-      alert("Ruby or CSS/Design");
+      $("#designruby").show();
     } else if (q1 === "ind" && q2 === "back") {
-      alert("PHP/Drupal or Java/Android")
-    }
-
-    if (q5 === "small") {
-      $("#lemur").show();
-    } else if (q5 === "big") {
-      $("#minotaur").show();
+      $("#javaphp").show();
     };
     alert("Test");
 
