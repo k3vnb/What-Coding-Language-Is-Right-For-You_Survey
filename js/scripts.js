@@ -8,17 +8,19 @@ $(document).ready(function() {
 
     if (q3 === "hate") {
       alert("what?");
+    } else if (q1, q2, q3, q4, q5 === "none") {
+      alert("Please complete the form");
     } else if (q1 === "corp" && q2 === "back") {
       alert("PHP, C#, or Java");
-    } else if (q1 !== "ind" && q2 === "front" || q1 !== "ind" && q2 === "back") {
-      alert("Ruby or C#");
+    } else if (q1 !== "corp" && q2 === "front" || q1 !== "corp" && q2 === "back") {
+      alert("Ruby or React");
     } else if (q1 === "ind" && q2 === "front") {
-      alert("Ruby or Design")
+      alert("Ruby, React or Design");
     } else if (q1 === "ind" && q2 === "back") {
       alert("PHP, C#, or Java")
     }
     alert("Test");
+  
+    event.preventDefault();
   });
-
-
 });
