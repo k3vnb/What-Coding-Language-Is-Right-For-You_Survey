@@ -8,7 +8,15 @@ $(document).ready(function() {
 
     if (q3 === "hate") {
       alert("what?");
-    } else if (q1 === )
+    } else if (q1 === "corp" && q2 === "back") {
+      alert("PHP, C#, or Java");
+    } else if (q1 !== "ind" && q2 === "front" || q1 !== "ind" && q2 === "back") {
+      alert("Ruby or C#");
+    } else if (q1 === "ind" && q2 === "front") {
+      alert("Ruby or Design")
+    } else if (q1 === "ind" && q2 === "back") {
+      alert("PHP, C#, or Java")
+    }
     alert("Test");
   });
 
