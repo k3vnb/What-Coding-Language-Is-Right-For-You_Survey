@@ -40,7 +40,7 @@ $(document).ready(function() {
       $("#javaphp").show();
     }
 
-    if (q1 && q2 && q3 && q4 !== "none") {
+    if (nameInput && q1 && q2 && q3 && q4 !== "none" || "") {
       if (q5 === "big") {
         $("#lemur").fadeOut(400);
         $("#minotaur").fadeIn(400);
