@@ -40,12 +40,14 @@ $(document).ready(function() {
       $("#javaphp").show();
     }
 
-    if (q5 === "big") {
-      $("#lemur").fadeOut(400);
-      $("#minotaur").fadeIn(400);
-    } else if (q5 === "small") {
-      $("#minotaur").fadeOut(400);
-      $("#lemur").fadeIn(400);
+    if (q1 && q2 && q3 && q4 !== "none") {
+      if (q5 === "big") {
+        $("#lemur").fadeOut(400);
+        $("#minotaur").fadeIn(400);
+      } else if (q5 === "small") {
+        $("#minotaur").fadeOut(400);
+        $("#lemur").fadeIn(400);
+      };
     };
 
     event.preventDefault();
