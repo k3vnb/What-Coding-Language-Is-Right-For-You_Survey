@@ -7,8 +7,18 @@ $(document).ready(function() {
     var q4 = $("select#q4").val();
     var q5 = $("select#q5").val();
 
-    if (q1, q2, q3, q4, q5, q4, q3, q2, q1 === "none") {
+    if (nameInput === "") {
+      alert("Please enter name");
+    } else if (q1 === "none") {
       alert("Please complete the form");
+    } else if (q2 === "none") {
+      alert("Please complete the form");
+    } else if (q3 === "none") {
+      alert("Please tell us your feelings about computers");
+    } else if (q4 === "none") {
+      alert("Please complete the form");
+    } else if (q5 === "none") {
+      alert("Please select a spirit animal");
     } else if (q3 === "hate") {
       $("#phpnet, #design, #rubyreact, #designruby, #javaphp").hide();
       $("#other").show();
@@ -31,11 +41,11 @@ $(document).ready(function() {
     }
 
     if (q5 === "big") {
-      $("#lemur").hide();
-      $("#minotaur").show();
+      $("#lemur").fadeOut(400);
+      $("#minotaur").fadeIn(400);
     } else if (q5 === "small") {
-      $("#minotaur").hide();
-      $("#lemur").show();
+      $("#minotaur").fadeOut(400);
+      $("#lemur").fadeIn(400);
     };
 
     event.preventDefault();
