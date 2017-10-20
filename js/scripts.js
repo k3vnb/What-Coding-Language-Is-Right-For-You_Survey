@@ -1,16 +1,18 @@
 $(document).ready(function() {
   $("form#codequiz").submit(function(event) {
+    var nameInput = $("input#name").val();
     var q1 = $("select#q1").val();
     var q2 = $("select#q2").val();
     var q3 = $("select#q3").val();
     var q4 = $("select#q4").val();
     var q5 = $("select#q5").val();
 
-    if (q1, q2, q3, q4, q5 === "none") {
+    if (q1, q2, q3, q4, q5, q4, q3, q2, q1 === "none") {
       alert("Please complete the form");
     } else if (q3 === "hate") {
       $("#phpnet, #design, #rubyreact, #designruby, #javaphp").hide();
       $("#other").show();
+      $(".name").text(nameInput).show();
     } else if (q1 === "corp" && q2 === "back") {
       $("#other, #design, #rubyreact, #designruby, #javaphp").hide();
       $("#phpnet").show();
@@ -26,7 +28,7 @@ $(document).ready(function() {
     } else if (q1 === "ind" && q2 === "back") {
       $("#phpnet, #design, #rubyreact, #designruby, #other").hide();
       $("#javaphp").show();
-    };
+    }
 
     if (q5 === "big") {
       $("#lemur").hide();

@@ -3,15 +3,16 @@
   text-align: center;
 }
 
-.card {
+.row {
   margin-top: 40px;
-  margin-bottom: 20px;
+}
+.card {
   padding: 10px;
   background-color: #e0838357;
 }
 
 img {
-  max-width: 200px;
+  max-width: 220px;
   border-radius: 50%;
   border: solid;
   box-shadow: 2px 2px 5px;
