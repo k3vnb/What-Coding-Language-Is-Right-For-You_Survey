@@ -6,10 +6,10 @@ $(document).ready(function() {
     var q4 = $("select#q4").val();
     var q5 = $("select#q5").val();
 
-    if (q3 === "hate") {
-      $("#other")
-    } else if (q1, q2, q3, q4, q5 === "none") {
+    if (q1, q2, q3, q4, q5 === "none") {
       alert("Please complete the form");
+    } else if (q3 === "hate") {
+      $("#other").show();
     } else if (q1 === "corp" && q2 === "back") {
       alert("PHP/Drupal or C#/.Net");
     } else if (q1 !== "corp" && q2 === "front" || q1 !== "corp" && q2 === "back") {
@@ -19,6 +19,12 @@ $(document).ready(function() {
     } else if (q1 === "ind" && q2 === "back") {
       alert("PHP/Drupal or Java/Android")
     }
+
+    if (q5 === "small") {
+      $("#lemur").show();
+    } else if (q5 === "big") {
+      $("#minotaur").show();
+    };
     alert("Test");
 
     event.preventDefault();
