@@ -35,7 +35,6 @@ $(document).ready(function() {
       $("#minotaur").hide();
       $("#lemur").show();
     };
-    alert("Test");
 
     event.preventDefault();
   });

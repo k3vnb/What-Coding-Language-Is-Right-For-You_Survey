@@ -7,6 +7,7 @@
   margin-top: 40px;
   margin-bottom: 20px;
   padding: 10px;
+  background-color: #e0838357;
 }
 
 img {
@@ -14,4 +15,12 @@ img {
   border-radius: 50%;
   border: solid;
   box-shadow: 2px 2px 5px;
+}
+
+form {
+  padding-left: 50px;
+}
+
+#nameplace {
+  margin-bottom: 10px;
 }
