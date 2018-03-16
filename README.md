@@ -6,7 +6,7 @@
 
 ## Description
 
-_Users are presented with 5 survey questions, which are calculated via jQuery branching technique. The results are displayed to the user upon clicking submit. All fields must receive an entry, otherwise an alert will pop up prompting the user to complete the form._
+_Users are presented with 5 survey questions, which are calculated via jQuery branching technique. The results are displayed to the user upon clicking submit. All fields must receive an entry, otherwise an alert will pop up prompting the user to complete the form. It can be found at  https://lemurriot.github.io/What-Coding-Language-Is-Right-For-You_Survey/ _
 
 ## Setup/Installation Requirements
 
